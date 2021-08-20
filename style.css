@@ -6,15 +6,36 @@ body{
     background-color: black;
 }
 #navbar{
+    position:fixed;
+    width: 99vw;
     text-align: end;
     background-color: red;
     height: 60px;
     padding: 10px;
+    
     display: flex;
     justify-content: flex-end;
 }
 #navbar a{
-    padding: 20px;
-    
+    padding: 20px; 
     margin: auto 0;
+    padding-right: 30px;
+}
+#welcome-section{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cadetblue;
+}
+#projects{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    height: 99vh;
+    background-color: #1e6a6d;
 }
