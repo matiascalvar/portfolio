@@ -74,9 +74,16 @@ body{
     border: 1px white solid;
     margin: 5px;
     padding: 5px;
+    width: 18vw;
+    height: 25vh;
+    text-overflow: ellipsis;
 }
 
-
+@media screen and (max-width: 1300px){
+    .card-container{
+        display:none;
+    }
+}
 
 
 
@@ -90,4 +97,9 @@ body{
     height: 100vh;
     background: rgb(3,62,71);
     background: linear-gradient(135deg, rgba(3,62,71,1) 0%, rgba(8,91,105,1) 100%);
+}
+
+footer{
+    text-align: center;
+    height: 3vh;
 }
