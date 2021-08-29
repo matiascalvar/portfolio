@@ -103,12 +103,12 @@ body{
         justify-content: center;
     }
     .card-container .card{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .card-container .card img{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .glitch{
         display: none;
@@ -116,7 +116,7 @@ body{
 }
 @media screen and (max-width: 460px){
     #projects{
-        height: 150vh;
+        height: 160vh;
     }
     #projects h1{
         font-size: 1.5rem;
@@ -124,6 +124,9 @@ body{
     #mobile-title{
         display:block;
         font-size: 2rem;
+    }
+    #navbar{
+        justify-content: center;
     }
 }
 
