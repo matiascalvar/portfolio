@@ -154,6 +154,18 @@ footer{
     height: 3vh;
 }
 
+blockquote{
+    padding-top:15vh;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+
+
+
 /*glitching title*/
 .glitch {
     position: relative;
