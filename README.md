@@ -1,2 +1,1 @@
-# Portfolio web site,
-# without bootstrap and javascript
+# Portfolio web site.
