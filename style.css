@@ -146,6 +146,10 @@ body{
     text-decoration: none;
     color: white;
 }
+.social {
+    width: 110px;
+    transition: width 0.5s;
+}
 .social :hover{
     width: 120px;
 }
