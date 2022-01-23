@@ -1,268 +1,282 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: 'Raleway', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: white;
-    background-color: black;
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
 }
-#navbar{
-    position:fixed;
-    width: 99vw;
-    text-align: end;
-    background-color: black;
-    height: 60px;
-    padding: 10px;
-    font-weight: bolder;
-    font-size: larger;
-    display: flex;
-    justify-content: flex-end;
+#navbar {
+  position: fixed;
+  width: 99vw;
+  text-align: end;
+  background-color: black;
+  height: 60px;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: larger;
+  display: flex;
+  justify-content: flex-end;
 }
-#navbar a{
-    padding: 20px; 
-    margin: auto 0;
-    padding-right: 30px;
-    color: white;
-    text-decoration: none;
+#navbar a {
+  padding: 20px;
+  margin: auto 0;
+  padding-right: 30px;
+  color: white;
+  text-decoration: none;
 }
-#welcome-section{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
+#welcome-section {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(3, 62, 71);
+  background: linear-gradient(
+    135deg,
+    rgba(3, 62, 71, 1) 0%,
+    rgba(8, 91, 105, 1) 100%
+  );
+}
+#welcome-section h1 {
+  font-size: 5rem;
+}
+
+#welcome-section h2 {
+  font-style: italic;
+  background-color: black;
+  white-space: pre-wrap;
+  margin-top: 0;
+}
+#mobile-title {
+  display: none;
+}
+#projects {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 99vh;
+  background: rgb(0, 0, 0);
+}
+#projects h1 {
+  border-bottom: 1px rgb(3, 62, 71) solid;
+  width: 60vw;
+  line-height: 80px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  flex-wrap: nowrap;
+}
+.card-container .card {
+  border: 1px rgb(3, 62, 71) solid;
+  margin: 5px;
+  padding: 5px;
+  width: 360px;
+  height: 360px;
+  text-overflow: ellipsis;
+  transition: background-color 1s;
+}
+.card:hover {
+  border: 1px rgb(8, 119, 136) solid;
+  background-color: #005792;
+}
+.card-container .card img {
+  width: 360px;
+  height: 360px;
+}
+
+@media screen and (max-width: 1300px) {
+  #welcome-section h1 {
+    font-size: 3rem;
+  }
+  #mobile-title {
+    display: block;
+    font-size: 3rem;
+  }
+  .card-container {
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: rgb(3,62,71);
-    background: linear-gradient(135deg, rgba(3,62,71,1) 0%, rgba(8,91,105,1) 100%);
-}
-#welcome-section h1{
-    font-size: 5rem;
-}
-
-#welcome-section h2{
-    font-style: italic;
-    background-color: black;
-    white-space: pre-wrap;
-    margin-top: 0;
-}
-#mobile-title{
+  }
+  .card-container .card {
+    width: 250px;
+    height: 250px;
+  }
+  .card-container .card img {
+    width: 250px;
+    height: 250px;
+  }
+  .glitch {
     display: none;
+  }
 }
-#projects{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    padding-top: 25px;
-    display: flex;
-    justify-content:flex-start;
-    flex-direction: column;
-    align-items:center;
-    height: 99vh;
-    background: rgb(0, 0, 0);
-}
-#projects h1{
-    border-bottom: 1px rgb(3,62,71) solid;
-    width: 60vw;
-    line-height: 80px;
-}
-.card-container{
-    display: flex;
-    justify-content:space-between;
-    margin: 0px;
-    flex-wrap: nowrap;
-}
-.card-container .card{
-    border: 1px rgb(3,62,71) solid;
-    margin: 5px;
-    padding: 5px;
-    width: 360px;
-    height: 360px;
-    text-overflow: ellipsis;
-}
-.card-container .card img{
-    width: 360px;
-    height: 360px;
-}
-
-
-@media screen and (max-width: 1300px){
-    #welcome-section h1{
-        font-size: 3rem;
-    }
-    #mobile-title{
-        display:block;
-        font-size: 3rem;
-    }
-    .card-container{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .card-container .card{
-        width: 250px;
-        height: 250px;
-    }
-    .card-container .card img{
-        width: 250px;
-        height: 250px;
-    }
-    .glitch{
-        display: none;
-    }
-}
-@media screen and (max-width: 460px){
-    #projects{
-        height: 160vh;
-    }
-    #projects h1{
-        font-size: 1.5rem;
-    }
-    #mobile-title{
-        display:block;
-        font-size: 2rem;
-    }
-    #navbar{
-        justify-content: center;
-    }
-}
-
-#contact{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-    display: flex;
+@media screen and (max-width: 460px) {
+  #projects {
+    height: 190vh;
+  }
+  #projects h1 {
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+  #mobile-title {
+    display: block;
+    font-size: 2rem;
+  }
+  #navbar {
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 90vh;
-    background: rgb(3,62,71);
-    background: linear-gradient(135deg, rgba(3,62,71,1) 0%, rgba(8,91,105,1) 100%);
+  }
 }
-#contact a{
-    text-decoration: none;
-    color: white;
+
+#contact {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  background: rgb(3, 62, 71);
+  background: linear-gradient(
+    135deg,
+    rgba(3, 62, 71, 1) 0%,
+    rgba(8, 91, 105, 1) 100%
+  );
+}
+#contact a {
+  text-decoration: none;
+  color: white;
 }
 .social {
-    width: 110px;
-    transition: width 0.5s;
+  width: 110px;
 }
-.social :hover{
-    width: 120px;
+.social img:hover {
+  width: 112px;
 }
-footer{
-    text-align: center;
-    height: 3vh;
-}
-
-blockquote{
-    padding-top:15vh;
-    font-size: 1.2rem;
-    text-align: center;
-    font-style: italic;
+footer {
+  text-align: center;
+  height: 3vh;
 }
 
-
-
-
-
+blockquote {
+  padding-top: 15vh;
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+}
 
 /*glitching title*/
 .glitch {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-size: 4rem;
-    text-shadow: 6px -6px 0px #fd5f00;
-    background: repeating-linear-gradient(45deg, #005792, #005792 1px, #fff 2px, #fff 3px);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+  text-shadow: 6px -6px 0px #fd5f00;
+  background: repeating-linear-gradient(
+    45deg,
+    #005792,
+    #005792 1px,
+    #fff 2px,
+    #fff 3px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.glitch::before, .glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgb(8, 84, 95);
-    color: #fd5f00;
-    clip: rect(0, 900px, 0, 0);
-    overflow: hidden;
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(8, 84, 95);
+  color: #fd5f00;
+  clip: rect(0, 900px, 0, 0);
+  overflow: hidden;
 }
 .glitch::before {
-    left: 7px;
-    text-shadow: 1px 0 #fd5f00;
-    animation: glitch-effect 3s infinite linear alternate-reverse;
+  left: 7px;
+  text-shadow: 1px 0 #fd5f00;
+  animation: glitch-effect 3s infinite linear alternate-reverse;
 }
 .glitch::after {
-    left: 3px;
-    text-shadow: -1px 0 #fd5f00;
-    animation: glitch-effect 2s infinite linear alternate-reverse;
+  left: 3px;
+  text-shadow: -1px 0 #fd5f00;
+  animation: glitch-effect 2s infinite linear alternate-reverse;
 }
 @keyframes glitch-effect {
-    0% {
-        clip: rect(85px, 9999px, 39px, 0);
-   }
-    5% {
-        clip: rect(35px, 9999px, 32px, 0);
-   }
-    10% {
-        clip: rect(2px, 9999px, 78px, 0);
-   }
-    15% {
-        clip: rect(79px, 9999px, 62px, 0);
-   }
-    20% {
-        clip: rect(93px, 9999px, 19px, 0);
-   }
-    25% {
-        clip: rect(7px, 9999px, 11px, 0);
-   }
-    30% {
-        clip: rect(76px, 9999px, 56px, 0);
-   }
-    35% {
-        clip: rect(28px, 9999px, 29px, 0);
-   }
-    40% {
-        clip: rect(54px, 9999px, 21px, 0);
-   }
-    45% {
-        clip: rect(59px, 9999px, 61px, 0);
-   }
-    50% {
-        clip: rect(7px, 9999px, 87px, 0);
-   }
-    55% {
-        clip: rect(11px, 9999px, 98px, 0);
-   }
-    60% {
-        clip: rect(28px, 9999px, 88px, 0);
-   }
-    65% {
-        clip: rect(5px, 9999px, 86px, 0);
-   }
-    70% {
-        clip: rect(83px, 9999px, 76px, 0);
-   }
-    75% {
-        clip: rect(2px, 9999px, 97px, 0);
-   }
-    80% {
-        clip: rect(10px, 9999px, 89px, 0);
-   }
-    85% {
-        clip: rect(31px, 9999px, 91px, 0);
-   }
-    90% {
-        clip: rect(90px, 9999px, 71px, 0);
-   }
-    95% {
-        clip: rect(7px, 9999px, 91px, 0);
-   }
-    100% {
-        clip: rect(72px, 9999px, 27px, 0);
-   }
+  0% {
+    clip: rect(85px, 9999px, 39px, 0);
+  }
+  5% {
+    clip: rect(35px, 9999px, 32px, 0);
+  }
+  10% {
+    clip: rect(2px, 9999px, 78px, 0);
+  }
+  15% {
+    clip: rect(79px, 9999px, 62px, 0);
+  }
+  20% {
+    clip: rect(93px, 9999px, 19px, 0);
+  }
+  25% {
+    clip: rect(7px, 9999px, 11px, 0);
+  }
+  30% {
+    clip: rect(76px, 9999px, 56px, 0);
+  }
+  35% {
+    clip: rect(28px, 9999px, 29px, 0);
+  }
+  40% {
+    clip: rect(54px, 9999px, 21px, 0);
+  }
+  45% {
+    clip: rect(59px, 9999px, 61px, 0);
+  }
+  50% {
+    clip: rect(7px, 9999px, 87px, 0);
+  }
+  55% {
+    clip: rect(11px, 9999px, 98px, 0);
+  }
+  60% {
+    clip: rect(28px, 9999px, 88px, 0);
+  }
+  65% {
+    clip: rect(5px, 9999px, 86px, 0);
+  }
+  70% {
+    clip: rect(83px, 9999px, 76px, 0);
+  }
+  75% {
+    clip: rect(2px, 9999px, 97px, 0);
+  }
+  80% {
+    clip: rect(10px, 9999px, 89px, 0);
+  }
+  85% {
+    clip: rect(31px, 9999px, 91px, 0);
+  }
+  90% {
+    clip: rect(90px, 9999px, 71px, 0);
+  }
+  95% {
+    clip: rect(7px, 9999px, 91px, 0);
+  }
+  100% {
+    clip: rect(72px, 9999px, 27px, 0);
+  }
 }
