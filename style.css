@@ -280,3 +280,15 @@ blockquote {
     clip: rect(72px, 9999px, 27px, 0);
   }
 }
+
+.epigraph {
+  font-size: 15px;
+}
+@media screen and (max-width: 1300px) {
+  .epigraph {
+    display: none;
+  }
+  .card p {
+    display: none;
+  }
+}
